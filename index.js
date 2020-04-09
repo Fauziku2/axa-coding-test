@@ -12,12 +12,3 @@ let reverseNum = num => {
   return Number(arrStr.reverse().join(""));
 };
 
-let ignoreZero = arr => {
-  let count = 0;
-  for (let x = 0; x < arr.length - 1; x++) {
-    if (arr[x] === "0") {
-      count++;
-    }
-  }
-  return arr.slice(count);
-};
